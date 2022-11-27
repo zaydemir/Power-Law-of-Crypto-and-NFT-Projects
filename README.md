@@ -19,3 +19,6 @@ dfMarketCaps <- read.csv(fileName)
 
 # Purpose of the Code
 The code calculates non-parametric estimates for the power law index using Hill's estimate and a more robust estimator as discussed in Beirlant et al (2005): “Estimation of the Extreme-Value Index and Generalized Quantile Plots.” For further details, you can refer to the research paper.
+
+# Extra
+The python script py_get_time_series_ETH_BTC.py is a nice extra that I added to this repository but needed to create the market capitalization data nor to successfully run the R script. This python script queries daily end-of-day price from CoinMarketCap for the set of coins specified in the array p_coins (my default here is 'BTC', and 'ETH'). You can use this data by converting the price series into daily log returns to estimate the power law indices of cryptocurrency projects.
